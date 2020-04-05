@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <!-- report theme --> <!-- standard, dark -->
+    <theme>standard</theme>
+  
+    <!-- document encoding -->  <!-- defaults to UTF-8 -->
+    <encoding>UTF-8</encoding>
+    
+    <!-- protocol for script and stylesheets -->   <!-- defaults to https -->
+    <protocol>https</protocol>
+    
+    <!-- title of the document -->
+    <documentTitle>BQUTO - Cucumber Framework</documentTitle>
+    
+    <!-- report name - displayed at top-nav -->
+    <reportName>BQUTO - Cucumber Report</reportName>
+    
+    <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
+    <dateFormat>yyyy-MM-dd</dateFormat>
+    
+    <!-- global time format override -->   <!-- defaults to HH:mm:ss -->
+    <timeFormat>HH:mm:ss</timeFormat>
+    
+    <!-- custom javascript -->
+    <scripts>
+      <![CDATA[
+$(document).ready(function() {
+var x=0;
+$("span.test-status.right").hover(function(){
+if(x==1){
+$("span.test-status.right").prop('title', 'double click to filter');
+}else if(x==0){
+$("span.test-status.right").prop('title', 'click to clear filter');
+}
+   });
+$("li[status='pass'].node.pass")  
+$('.pre').css("word-wrap", "break-word");  
+$('.steps').css("word-wrap", "break-word");     
+        
+ $("span.test-status.right").click(function(){
+ x=1;
+$("li[status='skip'].node.skip").show();
+$("li[status='pass'].node.pass").show();
+$("li[status='fail'].node.fail").show();
+  });
+
+$("span.test-status.right.fail").dblclick(function(){
+x=0;
+$("li[status='skip'].node.skip").hide();
+$("li[status='pass'].node.pass").hide();
+$("li[status='fail'].node.fail").show();
+  });
+$("span.test-status.right.pass").click(function(){
+x=1;
+$("li[status='skip'].node.skip").show();
+$("li[status='pass'].node.pass").show();
+$("li[status='fail'].node.fail").show();
+  });  
+$("span.test-status.right.skip").click(function(){
+x=1;
+$("li[status='skip'].node.skip").show();
+  });
+        
+        
+        });
+      ]]>
+    </scripts>
+    
+    <!-- custom styles -->
+    <styles>
+      <![CDATA[
+        .pre{
+        white-space: inherit;
+        }
+      ]]>
+    </styles>
+  </configuration>
+</extentreports>
