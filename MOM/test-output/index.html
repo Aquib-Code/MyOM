@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\xy59370\AppData\Local\Temp\testng-eclipse--1275587883\testng-customsuite.xml</span>
+                    <span>C:\Users\xy59370\AppData\Local\Temp\testng-eclipse--1422189886\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,9 +129,14 @@
                   </a> <!-- feature(User is able to login and submit a call me back) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(User is able to login and submit a call me back)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: The following asserts failed:
-	We are unable to load some of your data.
-Please try again. expected [false] but found [true]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LT083784&apos;, ip: &apos;172.16.101.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.oldmutual.myoldmutual.S..., appPackage: com.oldmutual.myoldmutual.qa, autoWebview: false, databaseEnabled: false, desired: {appActivity: com.oldmutual.myoldmutual.S..., appPackage: com.oldmutual.myoldmutual.qa, autoWebview: false, deviceName: Vison, noReset: false, platformName: android, platformVersion: 9.0, resetKeyboard: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 90000, unicodeKeyboard: true}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, resetKeyboard: true, statBarHeight: 84, takesScreenshot: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 90000, unicodeKeyboard: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: f26972c5-e540-423c-b4b7-916d0522cab9
+*** Element info: {Using=id, value=com.oldmutual.myoldmutual.qa:id/primaryValue}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -159,13 +164,44 @@ Please try again. expected [false] but found [true]
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	We are unable to load some of your data.
-Please try again. expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.cucumber.pages.ProductDetailsPage.logout(ProductDetailsPage.java:409)
-	at com.cucumber.steps.OldMutualSteps.log_out_of_OM_app(OldMutualSteps.java:48)
-	at ✽.And user logs out of OM app(MoM.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LT083784&apos;, ip: &apos;172.16.101.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.oldmutual.myoldmutual.S..., appPackage: com.oldmutual.myoldmutual.qa, autoWebview: false, databaseEnabled: false, desired: {appActivity: com.oldmutual.myoldmutual.S..., appPackage: com.oldmutual.myoldmutual.qa, autoWebview: false, deviceName: Vison, noReset: false, platformName: android, platformVersion: 9.0, resetKeyboard: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 90000, unicodeKeyboard: true}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, resetKeyboard: true, statBarHeight: 84, takesScreenshot: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 90000, unicodeKeyboard: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: f26972c5-e540-423c-b4b7-916d0522cab9
+*** Element info: {Using=id, value=com.oldmutual.myoldmutual.qa:id/primaryValue}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.cucumber.businesslogic.CommonMethod.getWebElementUsingBy(CommonMethod.java:125)
+	at com.cucumber.pages.ProductDetailsPage.availableBalance(ProductDetailsPage.java:56)
+	at com.cucumber.steps.OldMutualSteps.available_balance(OldMutualSteps.java:67)
+	at ✽.And verify Available balance of user(MoM.feature:6)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -177,7 +213,7 @@ Please try again. expected [false] but found [true]
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\xy59370\AppData\Local\Temp\testng-eclipse--1275587883\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\xy59370\AppData\Local\Temp\testng-eclipse--1422189886\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -260,12 +296,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.cucumber.runner.CucumberRunnerTest')
-data.setCell(0, 3, 183149);
+data.setCell(0, 3, 120473);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -298,21 +334,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">585 ms</span>
+                <span class="method-start">855 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(User is able to login and submit a call me back)</span>
-                <span class="method-start">27779 ms</span>
+                <span class="method-start">37442 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">210941 ms</span>
+                <span class="method-start">157925 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">211065 ms</span>
+                <span class="method-start">157968 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
