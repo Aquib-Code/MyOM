@@ -38,7 +38,7 @@ import com.cucumber.utility.LoggerClass;
 @SuppressWarnings("unused")
 @CucumberOptions(
 		//tags={ "@Version1" },
-		features = "C:/Users/xy59370/Downloads/resources/Feature", glue = { "com.cucumber.steps" }, plugin = {
+		features = "src/test/resources/tempFeatures", glue = { "com.cucumber.steps" }, plugin = {
 				"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:" }, strict = true, dryRun = false, monochrome = true)
 
 public class CucumberRunnerTest extends AbstractTestNGCucumberTests {
